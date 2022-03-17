@@ -148,5 +148,3 @@ print(" Remove not needed element from 2D List: 'Medium' for Depak")
 customer_data[3].remove("Medium")
 print(customer_data)
 
-
-print('test')
