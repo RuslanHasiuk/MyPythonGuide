@@ -1,7 +1,8 @@
 # В ЯП Python существует (4) четыре типа данных для хранения последовательностей:
 
-            # List (список) — упорядоченная последовательность, которую можно изменять.
-            # Допускаются одинаковые элементы. Могут быть разных типов
+             # List (list) - an ordered sequence that can be changed(впорядкована послідовність, яку можна змінити).
+             # Duplicate elements are allowed. Can be of different types(Допускаються повторювані елементи. Можуть бути різних видів).
+                        
 print("output existing list")
 mylist = [1, 5, 6, 8, 10, 4, 34, 56, 23, 4, 8]
 print(mylist)
@@ -113,4 +114,38 @@ print(rooms[4:])
 print("--------------------")
 print("use slice to output all the elements up to element under some index of list")
 print(rooms[:6])
+
+print("--------------------")
+print("Adding Lists Togethert")
+my_sports_activities = ['boxing', 'running', 'jumping', 'wrestling', 'bodybylding', 'jumping']
+my_friend_activities = ["football", "basketball", "tennis"]
+
+our_all_types_of_sport = my_sports_activities + my_friend_activities + [88] # to add some Not List value -> should be casted to list firstly by putting into '[]'
+print(our_all_types_of_sport)
+
+print("--------------------")
+print("----------------   2D Lists ------------------------")
+print(" Create 2D List")
+customer_data = [
+  ['Ainsley', 'Small', True],
+  ['Ben', 'Large', False],
+  ['Chani', 'Medium', True],
+  ]
+print(customer_data)
+print(" Add new data to  2D List")
+customer_data.append(['Depak', 'Medium', False])
+print(customer_data)
+
+print(" Change specific item in  2D List")
+customer_data[2][2] = False
+print(customer_data)
+
+print(" Remove not needed element from 2D List: 'False' for Ben")
+customer_data[1].remove(False)
+print(customer_data)
+
+print(" Remove not needed element from 2D List: 'Medium' for Depak")
+customer_data[3].remove("Medium")
+print(customer_data)
+
 
