@@ -1,4 +1,4 @@
-# В ЯП Python существует (4) четыре типа данных для хранения последовательностей:
+# In Python, there are (4) four data types for storing sequences:
 
              # List (list) - an ordered sequence that can be changed(впорядкована послідовність, яку можна змінити).
              # Duplicate elements are allowed. Can be of different types(Допускаються повторювані елементи. Можуть бути різних видів).
