@@ -1,4 +1,4 @@
-# В ЯП Python существует (4) четыре типа данных для хранения последовательностей:
+# In Python, there are (4) four data types for storing sequences:
 
              # List (list) - an ordered sequence that can be changed(впорядкована послідовність, яку можна змінити).
              # Duplicate elements are allowed. Can be of different types(Допускаються повторювані елементи. Можуть бути різних видів).
@@ -78,15 +78,15 @@ print("ADDING  New Element by defined index ON SPECIFIC PLACE in the list")
 fruits.insert(2, "orange")
 print(fruits)
 print("--------------------")
-print("removing new elements")
-leads = ['one', 'two', 'three', 'four', 'five']
+print("REMOVING  elementsl difference btw '.remove()' and '.pop()")
+leads = ['one', 'two', 'three', 'four', 'five', 'two']
 print(leads)
 print("--------------------")
-print("delete smth form list by saying exact element")
+print(" Remove first occurrence of value in list")
 leads.remove("two")
-print(leads)
+print(leads) # will be deleted value "two" with index 1, value "two" with index 5 will remain
 print("--------------------")
-print(" delete smth form list by saying exact index or delets last element (if not say exsct index)")
+print(" delete smth form list by saying exact index or delets last element (if not to say exact index)")
 leads.pop(2)
 print(leads)
 print("--------------------")
@@ -148,5 +148,3 @@ print(" Remove not needed element from 2D List: 'Medium' for Depak")
 customer_data[3].remove("Medium")
 print(customer_data)
 
-
-print('test')
