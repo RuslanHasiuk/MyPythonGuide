@@ -75,6 +75,26 @@ print(three)
 print(one)
 print(two)
 
+print(" ---------- Unpacking: number of values to unpack Must be the same as number of elements in tuple------------")
+family_members = ('Ruslan', 'Carolina', 'Olya', 'Demian')
+print('Family consists of:', family_members)
+
+print('                          So who is hwo ?!     ')
+daddy, daugther, mommy, son = family_members
+print('Daddy -', daddy)
+print('Son -', son)
+print('Daughter - ', daugther)
+print('Mommy -', mommy)
+
+print(" ---------------- Packing is accordingly a reverse operation to Unpacking--------------e")
+
+teammate_1 = 'Andrew'
+teammate_2 = 'Billy'
+teammate_3 = 'Sam'
+my_team = teammate_1, teammate_2, teammate_3
+print('My team:', my_team)
+
+
 
 
 
