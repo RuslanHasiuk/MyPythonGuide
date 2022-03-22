@@ -167,6 +167,6 @@ students_heights_ages = zip(names, heights, ages)
 # s zip object contains the location of this variable in our computer’s memory.
 # Don’t worry though, it is fairly simple to convert this object into a useable list
 # by using the built-in function list():
-list_of_students_with_heights_and_ages = list(students_heights_ages) # -> result is final list that contains tuples: [('Jenny', 61, 14), ('Alexus', 70, 13), ('Sam', 67, 8), ('Grace', 64, 22)]
-print(list_of_students_with_heights_and_ages)
+list_of_students_with_heights_and_ages = list(students_heights_ages) 
+print(list_of_students_with_heights_and_ages) # -> result is final list that contains tuples: [('Jenny', 61, 14), ('Alexus', 70, 13), ('Sam', 67, 8), ('Grace', 64, 22)]
 
