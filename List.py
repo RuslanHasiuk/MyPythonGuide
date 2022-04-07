@@ -170,3 +170,17 @@ students_heights_ages = zip(names, heights, ages)
 list_of_students_with_heights_and_ages = list(students_heights_ages) 
 print(list_of_students_with_heights_and_ages) # -> result is final list that contains tuples: [('Jenny', 61, 14), ('Alexus', 70, 13), ('Sam', 67, 8), ('Grace', 64, 22)]
 
+
+print('--------- To Convert string to list in Python: -------------- ')
+print(''' Syntax:
+string.split( delimiter, maxsplit)
+Parameters:
+Delimiter - Optional. Specifies the desired delimiter to use when splitting the string.
+If left empty, whitespaces are considered delimiters. Maxsplit - Optional. Specifies how many splits to do.''')
+
+str_1 = "Hire the top 1% freelance developers"
+list_1 = str_1.split()
+print(list_1)
+
+#Output:
+#['Hire', 'the', 'top', '1%', 'freelance', 'developers']
