@@ -13,7 +13,7 @@ for i in range(languages_length):
     print(i, languages[i])
 
 print('------')
-print('miss some item of list if you don\'t need it')
+print('Skip some item of list if you don\'t need it')
 
 for i in languages:
     if i == "Perl":
@@ -72,7 +72,14 @@ print('-------------------------------------------------------------------------
 print("---------------- Iteration of digitals in specific range (reversed order) ----------------")
 for i in reversed(range(2, 9)):
     print(i)
+print('-------------- Nested Loops ----------------')
+for location in sales_data:
+    print(location)
+    for element in location:
+        scoops_sold += element
+
+print(scoops_sold)
+
 print('---------------------------------------------------------------------------')
 print("---------------- ----------------")
-
 
