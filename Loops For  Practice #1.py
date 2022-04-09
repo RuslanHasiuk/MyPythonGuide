@@ -73,18 +73,34 @@ print("---------------- Iteration of digitals in specific range (reversed order)
 for i in reversed(range(2, 9)):
     print(i)
 print('-------------- Nested Loops ----------------')
+for regions in sales_data:
+    print('Region: ', regions)
+    for elements in regions:
+        print('elements:', elements)
+        sum_of_elements += elements
+    print('Sum of elements for each region:', sum_of_elements)
+print('Total of elements: ', sum_of_elements)
 
-sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+# Output: 
+# Region:  [12, 17, 22]
+# elements: 12
+# elements: 17
+# elements: 22
+# Sum of elements for each region: 51
+# Region:  [2, 10, 3]
+# elements: 2
+# elements: 10
+# elements: 3
+# Sum of elements for each region: 66
+# Region:  [5, 12, 13]
+# elements: 5
+# elements: 12
+# elements: 13
+# Sum of elements for each region: 96
+# Total of elements:  96
 
-scoops_sold = 0
 
-for location in sales_data:
-    print(location)
-    for element in location:
-        scoops_sold += element
 
-print(scoops_sold)
-
-print('---------------------------------------------------------------------------')
-print("---------------- ----------------")
+print('-----------------------------------------------------------------------------------------')
+print("----------------     ----------------")
 
