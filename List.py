@@ -184,3 +184,40 @@ print(list_1)
 
 #Output:
 #['Hire', 'the', 'top', '1%', 'freelance', 'developers']
+
+
+
+List Comprehensions:
+  # Let's assume we have a list of integers and wanted to create a list where each element is doubled. 
+  # We could accomplish this using a for loop and a new list called doubled:
+
+numbers = [2, -1, 79, 33, -45]
+doubled = []
+ 
+for number in numbers:
+  doubled.append(number * 2)
+ 
+print(doubled)
+
+# Would output:
+#[4, -2, 158, 66, -90]
+  
+# General Scheme: 
+# new_list = [<expression> for <element> in <collection>]
+
+# Here is our solution for same task but now written as a list comprehension:
+
+numbers = [2, -1, 79, 33, -45]
+doubled = [num * 2 for num in numbers]
+print(doubled)
+  
+#In our doubled example, our list comprehension:
+
+# Takes an element in the list numbers
+# Assigns that element to a variable called num (our <element>)
+# Applies the <expression> on the element stored in num and adds the result to a new list called doubled
+# Repeats steps 1-3 for every other element in the numbers list (our <collection>)
+
+# Our result would be the same:
+# [4, -2, 158, 66, -90]
+
