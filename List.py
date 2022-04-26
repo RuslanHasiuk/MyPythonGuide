@@ -131,6 +131,14 @@
 #   ['Ben', 'Large', False],
 #   ['Chani', 'Medium', True],
 #   ]
+#
+# print(customer_data[1][0])
+# customer_data[1].remove(False)
+# customer_data.insert(2, ['Ivan', 'Small', False])
+#
+# print(customer_data)
+
+
 # print(customer_data)
 # print(" Add new data to  2D List")
 # customer_data.append(['Depak', 'Medium', False])
@@ -148,25 +156,33 @@
 # customer_data[3].remove("Medium")
 # print(customer_data)
 
-print('''The zip() function allows us to quickly combine associated data-sets without needing to rely on multi-dimensional lists.
-It takes two (or more) lists as inputs and returns an object that contains a list of pairs. 
-Each pair contains one element from each of the inputs. This is how we would do it for our names and heights lists:
-''')
+# print('''The zip() function allows us to quickly combine associated data-sets without needing to rely on multi-dimensional lists.
+# It takes two (or more) lists as inputs and returns an object that contains a list of pairs.
+# Each pair contains one element from each of the inputs. This is how we would do it for our names and heights lists:
+# ''')
 
-names = ["Jenny", "Alexus", "Sam", "Grace"]
-print('names:', names)
+# names = ["Jenny", "Alexus", "Sam", "Grace"]
+# print('names:', names)
+#
+# heights = [61, 70, 67, 64]
+# print('heights:', heights)
+#
+# ages = [14, 13, 8, 22, 45, 34,  77]
+# print('ages:', ages)
+# print(ages[-4:])
+# olympic_sports = ["Hockey", "Swimming", "Fencing", "Volleyball", "Breakdancing"]
 
-heights = [61, 70, 67, 64]
-print('heights:', heights)
 
-ages = [14, 13, 8, 22]
-print('ages:', ages)
 
-print('--------- Let\'s create  a nested list that paired each name with a height and age: -------------- ')
-students_heights_ages = zip(names, heights, ages)
-# s zip object contains the location of this variable in our computer’s memory.
-# Don’t worry though, it is fairly simple to convert this object into a useable list
-# by using the built-in function list():
-list_of_students_with_heights_and_ages = list(students_heights_ages) 
-print(list_of_students_with_heights_and_ages) # -> result is final list that contains tuples: [('Jenny', 61, 14), ('Alexus', 70, 13), ('Sam', 67, 8), ('Grace', 64, 22)]
+# olympic_sports.pop(-1)
+# print(olympic_sports)
+#
+# print('--------- Let\'s create  a nested list that paired each name with a height and age: -------------- ')
+# students_heights_ages = zip(names, heights, ages)
+# # s zip object contains the location of this variable in our computer’s memory.
+# # Don’t worry though, it is fairly simple to convert this object into a useable list
+# # by using the built-in function list():
+# list_of_students_with_heights_and_ages = list(students_heights_ages)
+# print(list_of_students_with_heights_and_ages) # -> result is final list that contains tuples: [('Jenny', 61, 14), ('Alexus', 70, 13), ('Sam', 67, 8), ('Grace', 64, 22)]
+
 

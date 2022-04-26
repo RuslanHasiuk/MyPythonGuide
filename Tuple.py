@@ -63,7 +63,7 @@ print("Calculate sum of elements in tuple")
 print(sum(x))
 print("--------------------")
 print("If you wanna sort your tuple - make by using \'sorted()\' function")
-a = (6,7,4,2,1,5,3)
+a = (6, 7, 4, 2, 1, 5, 3)
 print(a)
 sorted_tuple = sorted(a)
 print(sorted_tuple)
@@ -79,7 +79,7 @@ print(" ---------- Unpacking: number of values to unpack Must be the same as num
 family_members = ('Ruslan', 'Carolina', 'Olya', 'Demian')
 print('Family consists of:', family_members)
 
-print('                          So who is hwo ?!     ')
+print('                          So who is who ?!     ')
 daddy, daugther, mommy, son = family_members
 print('Daddy -', daddy)
 print('Son -', son)
@@ -92,7 +92,7 @@ teammate_1 = 'Andrew'
 teammate_2 = 'Billy'
 teammate_3 = 'Sam'
 my_team = teammate_1, teammate_2, teammate_3
-print('My team:', my_team)
+print('My team:', my_team)  # My team: ('Andrew', 'Billy', 'Sam')
 
 
 
