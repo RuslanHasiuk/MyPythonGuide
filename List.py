@@ -186,3 +186,103 @@
 # print(list_of_students_with_heights_and_ages) # -> result is final list that contains tuples: [('Jenny', 61, 14), ('Alexus', 70, 13), ('Sam', 67, 8), ('Grace', 64, 22)]
 
 
+
+print('--------- To Convert string to list in Python: -------------- ')
+print(''' Syntax:
+string.split( delimiter, maxsplit)
+Parameters:
+Delimiter - Optional. Specifies the desired delimiter to use when splitting the string.
+If left empty, whitespaces are considered delimiters. Maxsplit - Optional. Specifies how many splits to do.''')
+
+str_1 = "Hire the top 1% freelance developers"
+list_1 = str_1.split()
+print(list_1)
+
+#Output:
+#['Hire', 'the', 'top', '1%', 'freelance', 'developers']
+
+
+
+print('----------------------       List Comprehensions:  -------------------')
+  # Let's assume we have a list of integers and wanted to create a list where each element is doubled. 
+  # We could accomplish this using a for loop and a new list called doubled:
+
+numbers = [2, -1, 79, 33, -45]
+doubled = []
+ 
+for number in numbers:
+  doubled.append(number * 2)
+print(doubled)
+# Would output:
+#[4, -2, 158, 66, -90]
+  
+# General Scheme for LIST COMPREHENSIONS: 
+# new_list = [<expression> for <element> in <collection>]
+
+# Here is our solution for same task but now written as a list comprehension:
+
+numbers = [2, -1, 79, 33, -45]
+doubled = [num * 2 for num in numbers]
+print(doubled)
+  
+#In our doubled example, our list comprehension:
+# Takes an element in the list numbers
+# Assigns that element to a variable called num (our <element>)
+# Applies the <expression> on the element stored in num and adds the result to a new list called doubled
+# Repeats steps 1-3 for every other element in the numbers list (our <collection>)
+# Our result would be the same:
+# [4, -2, 158, 66, -90]
+
+
+print('------------   Creating a new list by using \'For\' loop and control flow only: ')
+
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+
+can_ride_coaster = []
+for item in heights:
+    if item > 161:
+        can_ride_coaster.append(item)
+print(can_ride_coaster)
+
+print(' -------------   Creating a new list by using List Comprehensions only:   ')
+can_ride_coaster = [item for item in heights if item > 161]
+print(can_ride_coaster)
+
+
+print('---------------   Syntax for using Conditionals  in  List Comprehensions  ---------------------')
+
+numbers = [2, -1, 79, 33, -45]
+
+# Suppose we wanted to double only our negative numbers from our previous numbers list.
+doubled_numbers = [num * 2 for num in numbers if num < 0]
+print('Doubled negative number from initial list:', doubled_numbers)
+
+# Now, let’s say we want to double every negative number but triple all positive numbers
+doubled_numbers = [num * 2 if num < 0 else num * 3 for num in numbers]
+print('Let\'s Double negative number from initial list, and Triple positive ones:', doubled_numbers)
+
+
+# Inside the loop that iterates through single_digits,
+# append the squared value of each element of single_digits to the list squares.
+
+single_digits = []
+
+for i in range(10):
+  single_digits.append(i)
+print(single_digits)
+
+squares = []
+
+for elem in single_digits:
+  print(elem)
+  squares.append(elem**2)
+
+print(squares)
+
+# Create the list cubes using a list comprehension on the single_digits list.
+# Each element of cubes should be an element of single_digits taken to the third power.
+
+cubes = [item**3 for item in single_digits]
+
+print(cubes)
+

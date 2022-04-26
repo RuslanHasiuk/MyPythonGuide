@@ -13,7 +13,7 @@ for i in range(languages_length):
     print(i, languages[i])
 
 print('------')
-print('miss some item of list if you don\'t need it')
+print('Skip some item of list if you don\'t need it')
 
 for i in languages:
     if i == "Perl":
@@ -72,7 +72,35 @@ print('-------------------------------------------------------------------------
 print("---------------- Iteration of digitals in specific range (reversed order) ----------------")
 for i in reversed(range(2, 9)):
     print(i)
-print('---------------------------------------------------------------------------')
-print("---------------- ----------------")
+print('-------------- Nested Loops ----------------')
+for regions in sales_data:
+    print('Region: ', regions)
+    for elements in regions:
+        print('elements:', elements)
+        sum_of_elements += elements
+    print('Sum of elements for each region:', sum_of_elements)
+print('Total of elements: ', sum_of_elements)
 
+# Output: 
+# Region:  [12, 17, 22]
+# elements: 12
+# elements: 17
+# elements: 22
+# Sum of elements for each region: 51
+# Region:  [2, 10, 3]
+# elements: 2
+# elements: 10
+# elements: 3
+# Sum of elements for each region: 66
+# Region:  [5, 12, 13]
+# elements: 5
+# elements: 12
+# elements: 13
+# Sum of elements for each region: 96
+# Total of elements:  96
+
+
+
+print('-----------------------------------------------------------------------------------------')
+print("----------------     ----------------")
 
